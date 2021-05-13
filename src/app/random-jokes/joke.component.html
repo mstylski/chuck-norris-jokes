@@ -1,0 +1,24 @@
+<div class="joke-container container-fluid">
+  <div class="joke-body container-fluid">
+    <div class="joke-header">
+      <img mat-card-image  class="img-fluid" src="assets/images/chuck-norris-photo.png" alt="chuck norris">
+    </div>
+    <div class="joke">
+      "{{joke?.value?.joke}}"
+    </div>
+    <form [formGroup]="modelForm">
+
+      <select formControlName="category" class="input" label="Categories">
+        <option [value]="category.ANY">Any</option>
+        <option [value]="category.EXPLICIT">Explicit</option>
+        <option [value]="category.NERDY">Nerdy</option>
+      </select>
+      <input type="text" formControlName="fullName" class="character-name" placeholder="Impersonate Chuck Norris">
+    </form>
+    <div>
+      <button type="button" class="change-joke" (click)="drawRandomJoke()">
+        Draw a random  {{modelForm.get('fullName')?.value}} Joke
+      </button>
+    </div>
+  </div>
+</div>
