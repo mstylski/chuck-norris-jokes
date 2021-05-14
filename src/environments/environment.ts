@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: `http://api.icndb.com/`,
+  apiUrl: `https://api.icndb.com/`,
 };
