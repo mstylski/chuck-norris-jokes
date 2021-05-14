@@ -8,7 +8,6 @@ import {Category} from '../models/categories.enum';
 @Injectable({
   providedIn: 'root'
 })
-
 export class JokeService {
 
   constructor(private http: HttpClient) {

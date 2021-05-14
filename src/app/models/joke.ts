@@ -5,6 +5,5 @@ export interface Joke {
     id: number;
     joke: string;
   };
-  fullName: string;
 }
 

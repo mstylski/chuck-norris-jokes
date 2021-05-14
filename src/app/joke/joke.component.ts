@@ -4,13 +4,11 @@ import {Category} from '../models/categories.enum';
 import {JokeService} from './joke.service';
 import {Joke} from '../models/joke';
 
-
 @Component({
   selector: 'app-jokes',
   templateUrl: './joke.component.html',
   styleUrls: ['./joke.component.scss'],
 })
-
 export class JokeComponent implements OnInit {
   category = Category;
   modelForm!: FormGroup;
