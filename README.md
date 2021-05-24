@@ -1,1 +1,1 @@
-# chuck-norris-jokes
+https://mstylski.github.io/chuck-norris-jokes
